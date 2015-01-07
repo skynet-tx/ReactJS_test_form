@@ -71,9 +71,9 @@ var ListItems = React.createClass({
 			)
 		});
 		return (
-			<div className="list-items">
+			<ul className="list-items">
 				{itemNodes}
-			</div>
+			</ul>
 		);
 	}
 });
@@ -109,13 +109,11 @@ var Item = React.createClass({
 		var rawMarkup = converter.makeHtml(this.props.children.toString());
 
 		return (
-			<div className="item-cell">
-				<h4>
-					<div>№ {this.props.id}
-						<div className="item-text" dangerouslySetInnerHTML={{__html: rawMarkup}} />
-					</div>
-				</h4>
-			</div>
+			<li className="item-cell">
+				<div>{this.props.id}
+					<div className="item-text" dangerouslySetInnerHTML={{__html: rawMarkup}} />
+				</div>
+			</li>
 		)
 	}
 });
