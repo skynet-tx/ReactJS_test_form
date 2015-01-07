@@ -5,5 +5,5 @@ There is simple server implementations included. It serve static files from publ
 
 **Node**:
 ========
-npm install
+npm install  
 node server.js
