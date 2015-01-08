@@ -2,3 +2,9 @@
 	display: inline-block;
 	padding: 0 0 0 15px;
 }
+.form-item{
+	border: 1px solid rgb(169, 169, 169);
+	width: 242px;
+	padding: 25px;
+	border-radius: 5px 10px;
+}

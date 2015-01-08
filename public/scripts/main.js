@@ -91,9 +91,13 @@ var FormItem = React.createClass({
 		this.refs.item.getDOMNode().value = '';
 	},
 
+	focusInput: function(){
+		this.refs.item.getDOMNode().focus();
+	},
+
 	render: function () {
 		return (
-			<div className="form-item">
+			<div onClick={this.focusInput}  className="form-item">
 				<form onSubmit={this.handleSubmit}>
 					<input type="text" ref="item" placeholder="Your Item..." />
 					<button type="submit">Add Item</button>
